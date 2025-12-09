@@ -1,7 +1,13 @@
-<script></script>
+<script>
+
+</script>
 
 <template>
-  <h1>You did it!</h1>
+  <main>
+    <router-view :key="$route.fullPath"/>
+  </main>
 </template>
 
-<style></style>
+<style>
+
+</style>
