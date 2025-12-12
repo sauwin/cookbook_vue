@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1>NotFoundPage</h1>
+    <h1 class="text">NotFoundPage</h1>
 </template>
 
 <style>

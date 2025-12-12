@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1>FavoritesPage</h1>
+    <h1 class="text">FavoritesPage</h1>
 </template>
 
 <style>
