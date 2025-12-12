@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1>RecipesPage</h1>
+    <h1 class="text">RecipesPage</h1>
 </template>
 
 <style>
