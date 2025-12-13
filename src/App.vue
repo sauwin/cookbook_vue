@@ -16,11 +16,13 @@
 </script>
 
 <template>
-  <v-app>
-    <Header></Header>
+<v-app class="bg-grey-lighten-4">
+  <Header />
+  <v-main>
     <router-view />
-    <Footer></Footer>
-  </v-app>
+  </v-main>
+  <Footer />
+</v-app>
 </template>
 
 <style>
