@@ -3,7 +3,11 @@
 </script>
 
 <template>
-    <h1 class="text">NotFoundPage</h1>
+    <v-container align="center" class="py-14 mt-14">
+        <div>
+            Not Found Page...
+        </div>
+    </v-container>
 </template>
 
 <style>
