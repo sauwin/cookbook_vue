@@ -3,7 +3,18 @@ export default {
   name: "HomeView",
   data() {
     return {
-      recipesCount: 128
+      recipesCount: 128,
+      images_car: [
+        new URL('@/assets/images/food1.jpg', import.meta.url).href,
+        new URL('@/assets/images/food2.jpg', import.meta.url).href,
+        new URL('@/assets/images/food3.jpg', import.meta.url).href,
+        new URL('@/assets/images/food4.jpg', import.meta.url).href,
+        new URL('@/assets/images/food5.jpg', import.meta.url).href,
+        new URL('@/assets/images/food6.jpg', import.meta.url).href,
+        new URL('@/assets/images/food7.jpg', import.meta.url).href,
+        new URL('@/assets/images/food8.jpg', import.meta.url).href,
+        new URL('@/assets/images/food9.jpg', import.meta.url).href,
+      ]
     }
   }
 }
@@ -23,6 +34,57 @@ export default {
             </div>
         </div>
     </v-container>
+
+    <v-container class="py-16 mt-14">
+        <v-row align="center">
+            <v-col cols="12" md="6" >
+                <h2 class="section-title">Discover New Recipes</h2>
+                <p class="section-text">
+                    Explore a growing collection of homemade recipes.
+                    Find inspiration for every day cooking, from quick meals
+                    to special dishes.
+                </p>
+                <v-btn color="#2b9931" size="large" class="mt-4" to="/recipes">Browse Recipes</v-btn>
+            </v-col>
+            
+            <v-col cols="12" md="6" class="text-center">
+                <v-icon size="120" color="#2b9931" > mdi-silverware-fork-knife</v-icon>
+            </v-col>
+        </v-row>
+    </v-container>
+
+    <v-container class="py-16 mt-14">
+        <v-row align="center">
+            <v-col cols="12" md="6" class="text-center">
+                <v-icon size="120" color="#2b9931">mdi-notebook-edit-outline</v-icon>
+            </v-col>
+
+            <v-col cols="12" md="6">
+                <h2 class="section-title">Add Your Own Recipes</h2>
+                <p class="section-text">
+                    Create your personal cookbook.
+                    Save your favorite recipes and build your own collection
+                    in one place.
+                </p>
+                <v-btn color="#2b9931" size="large" class="mt-4" to="/addrecipe">Add Recipe</v-btn>
+            </v-col>
+        </v-row>
+    </v-container>
+
+    <v-container fluid class="py-16 pa-0">
+        <v-carousel height="700" hide-delimiter-background show-arrows="hover" cycle>
+            <v-carousel-item v-for="(img, i) in images_car" :key="i">
+                <v-sheet height="100%" class="d-flex align-center justify-center">
+                    <v-img :src="img" cover height="100%">
+                        <div class="carousel-overlay">
+                            <h3>Anyone CAN Cook</h3>
+                        </div>
+                    </v-img>
+                </v-sheet>
+            </v-carousel-item>       
+        </v-carousel>
+    </v-container>
+
     <v-container class="mb-6 mt-16 pa-0 px-0 banner-content">
         <div class="mb-10 feature-text">
             <h1>Manage your favorite recipes online</h1>
@@ -64,6 +126,32 @@ export default {
 </template>
 
 <style>
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-text {
+    font-size: 18px;
+    color: #555;
+    max-width: 500px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .feature-text {
     font-size: 16px;
     margin-bottom: 16px;
@@ -95,7 +183,7 @@ export default {
 .banner {
     position: relative;
     height: 596px;
-    background-image: url(./public/photo-1504674900247-0877df9cc836.jpg);
+    background-image: url(./public/banner.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
