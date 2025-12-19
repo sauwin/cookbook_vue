@@ -5,18 +5,18 @@ export default {
 </script>
 
 <template>
-    <v-app-bar color="white">
-        <v-spacer />
-        <h1 variant="text" to="/" class="logo">/e.CookBook</h1>
-        <v-spacer /><v-spacer />
-        <div class="d-flex align-center ga-4">
-            <router-link to="/" class="nav-link" exact>Home</router-link>
-            <router-link to="/recipes" class="nav-link">Recipes</router-link>
-            <router-link to="/favorites" class="nav-link">Favorites</router-link>
-            <v-btn to="/addrecipe" variant="flat" rounded="sl" color="#2b9931" class="ml-4">Add Recipe</v-btn>
-        </div>
-        <v-spacer />
-    </v-app-bar>
+<v-app-bar color="white">
+    <v-spacer />
+    <h1 variant="text" to="/" class="logo">/e.CookBook</h1>
+    <v-spacer /><v-spacer />
+    <div class="d-flex align-center ga-4">
+        <router-link to="/" class="nav-link" exact>Home</router-link>
+        <router-link to="/recipes" class="nav-link">Recipes</router-link>
+        <router-link to="/favorites" class="nav-link">Favorites</router-link>
+        <v-btn to="/addrecipe" variant="flat" rounded="sl" color="#2b9931" class="ml-4">Add Recipe</v-btn>
+    </div>
+    <v-spacer />
+</v-app-bar>
 </template>
 
 <style>

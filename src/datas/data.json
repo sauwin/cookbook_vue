@@ -1,92 +1,156 @@
-[
-  {
-    "id": 0,
-    "title": "",
-    "description": "",
-    "ingredients": [""],
-    "steps": [""],
-    "time": 0,
-    "image": "",
-    "favorites": false
-  },
-  {
-    "id": 1,
-    "title": "",
-    "description": "",
-    "ingredients": [""],
-    "steps": [""],
-    "time": 0,
-    "image": "",
-    "favorites": false
-  },
-  {
-    "id": 2,
-    "title": "",
-    "description": "",
-    "ingredients": [""],
-    "steps": [""],
-    "time": 0,
-    "image": "",
-    "favorites": false
-  },
-  {
-    "id": 3,
-    "title": "",
-    "description": "",
-    "ingredients": [""],
-    "steps": [""],
-    "time": 0,
-    "image": "",
-    "favorites": false
-  },
-  {
-    "id": 4,
-    "title": "",
-    "description": "",
-    "ingredients": [""],
-    "steps": [""],
-    "time": 0,
-    "image": "",
-    "favorites": false
-  },
-  {
-    "id": 5,
-    "title": "",
-    "description": "",
-    "ingredients": [""],
-    "steps": [""],
-    "time": 0,
-    "image": "",
-    "favorites": false
-  },
-  {
-    "id": 6,
-    "title": "",
-    "description": "",
-    "ingredients": [""],
-    "steps": [""],
-    "time": 0,
-    "image": "",
-    "favorites": false
-  },
-  {
-    "id": 7,
-    "title": "",
-    "description": "",
-    "ingredients": [""],
-    "steps": [""],
-    "time": 0,
-    "image": "",
-    "favorites": false
-  },
-  {
-    "id": 8,
-    "title": "",
-    "description": "",
-    "ingredients": [""],
-    "steps": [""],
-    "time": 0,
-    "image": "",
-    "favorites": false
-  }
-]
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Classic Pancakes",
+      "slug": "classic-pancakes",
+      "description": "Soft and fluffy pancakes perfect for breakfast.",
+      "ingredients": [
+        "1 cup flour",
+        "1 cup milk",
+        "1 egg",
+        "1 tbsp sugar",
+        "1 tsp baking powder",
+        "Pinch of salt"
+      ],
+      "steps": [
+        "Mix all dry ingredients in a bowl.",
+        "Add milk and egg, mix until smooth.",
+        "Heat a pan and pour batter.",
+        "Cook until bubbles appear, then flip."
+      ],
+      "time": 20,
+      "image": "pancakes.jpg",
+      "favorites": false
+    },
+    {
+      "id": 2,
+      "title": "Scrambled Eggs",
+      "slug": "scrambled-eggs",
+      "description": "Quick and easy scrambled eggs for busy mornings.",
+      "ingredients": [
+        "3 eggs",
+        "2 tbsp milk",
+        "Salt",
+        "Butter"
+      ],
+      "steps": [
+        "Whisk eggs with milk and salt.",
+        "Melt butter in a pan.",
+        "Pour eggs into pan.",
+        "Stir gently until cooked."
+      ],
+      "time": 10,
+      "image": "scrambled-eggs.jpg",
+      "favorites": false
+    },
+    {
+      "id": 3,
+      "title": "Spaghetti Aglio e Olio",
+      "slug": "spaghetti-aglio-e-olio",
+      "description": "Simple Italian pasta with garlic and olive oil.",
+      "ingredients": [
+        "200g spaghetti",
+        "3 cloves garlic",
+        "Olive oil",
+        "Salt",
+        "Chili flakes"
+      ],
+      "steps": [
+        "Cook spaghetti in salted water.",
+        "Slice garlic and fry in olive oil.",
+        "Add chili flakes.",
+        "Mix pasta with garlic oil."
+      ],
+      "time": 15,
+      "image": "aglio-e-olio.jpg",
+      "favorites": false
+    },
+    {
+      "id": 4,
+      "title": "Chicken Salad",
+      "slug": "chicken-salad",
+      "description": "Fresh salad with grilled chicken and vegetables.",
+      "ingredients": [
+        "Chicken breast",
+        "Lettuce",
+        "Tomatoes",
+        "Cucumber",
+        "Olive oil",
+        "Salt"
+      ],
+      "steps": [
+        "Grill chicken until cooked.",
+        "Chop vegetables.",
+        "Slice chicken.",
+        "Mix everything with olive oil and salt."
+      ],
+      "time": 25,
+      "image": "chicken-salad.jpg",
+      "favorites": false
+    },
+    {
+      "id": 5,
+      "title": "Grilled Cheese Sandwich",
+      "slug": "grilled-cheese-sandwich",
+      "description": "Crispy sandwich with melted cheese inside.",
+      "ingredients": [
+        "2 slices bread",
+        "Cheese",
+        "Butter"
+      ],
+      "steps": [
+        "Butter the bread.",
+        "Place cheese between slices.",
+        "Grill on pan until golden.",
+        "Flip and cook other side."
+      ],
+      "time": 8,
+      "image": "grilled-cheese.jpg",
+      "favorites": false
+    },
+    {
+      "id": 6,
+      "title": "Omelette",
+      "slug": "omelette",
+      "description": "Classic omelette with simple ingredients.",
+      "ingredients": [
+        "2 eggs",
+        "Salt",
+        "Pepper",
+        "Butter"
+      ],
+      "steps": [
+        "Whisk eggs with salt and pepper.",
+        "Melt butter in pan.",
+        "Pour eggs and cook gently.",
+        "Fold omelette and serve."
+      ],
+      "time": 10,
+      "image": "omelette.jpg",
+      "favorites": false
+    },
+    {
+      "id": 7,
+      "title": "Tomato Soup",
+      "slug": "tomato-soup",
+      "description": "Warm and comforting tomato soup.",
+      "ingredients": [
+        "Tomatoes",
+        "Onion",
+        "Garlic",
+        "Olive oil",
+        "Salt"
+      ],
+      "steps": [
+        "Chop vegetables.",
+        "Cook onion and garlic in oil.",
+        "Add tomatoes and simmer.",
+        "Blend until smooth."
+      ],
+      "time": 30,
+      "image": "tomato-soup.jpg",
+      "favorites": false
+    }
+  ]
+}

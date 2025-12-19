@@ -7,19 +7,18 @@
     components: { Header, Footer },
     data() {
       return {
-
+        recipes: data.recipes
       }
     },
 
   }
-
 </script>
 
 <template>
 <v-app class="bg-grey-lighten-4">
   <Header />
   <v-main>
-    <router-view />
+    <router-view :key="$route.fullPath"/>
   </v-main>
   <Footer />
 </v-app>
