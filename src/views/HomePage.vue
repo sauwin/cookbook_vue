@@ -5,15 +5,15 @@ export default {
     return {
       recipesCount: 128,
       images_car: [
-        new URL('@/assets/images/food1.jpg', import.meta.url).href,
-        new URL('@/assets/images/food2.jpg', import.meta.url).href,
-        new URL('@/assets/images/food3.jpg', import.meta.url).href,
-        new URL('@/assets/images/food4.jpg', import.meta.url).href,
-        new URL('@/assets/images/food5.jpg', import.meta.url).href,
-        new URL('@/assets/images/food6.jpg', import.meta.url).href,
-        new URL('@/assets/images/food7.jpg', import.meta.url).href,
-        new URL('@/assets/images/food8.jpg', import.meta.url).href,
-        new URL('@/assets/images/food9.jpg', import.meta.url).href,
+        new URL('@/assets/images/carousel/food1.jpg', import.meta.url).href,
+        new URL('@/assets/images/carousel/food2.jpg', import.meta.url).href,
+        new URL('@/assets/images/carousel/food3.jpg', import.meta.url).href,
+        new URL('@/assets/images/carousel/food4.jpg', import.meta.url).href,
+        new URL('@/assets/images/carousel/food5.jpg', import.meta.url).href,
+        new URL('@/assets/images/carousel/food6.jpg', import.meta.url).href,
+        new URL('@/assets/images/carousel/food7.jpg', import.meta.url).href,
+        new URL('@/assets/images/carousel/food8.jpg', import.meta.url).href,
+        new URL('@/assets/images/carousel/food9.jpg', import.meta.url).href,
       ]
     }
   }
@@ -66,13 +66,13 @@ export default {
                     Save your favorite recipes and build your own collection
                     in one place.
                 </p>
-                <v-btn color="#2b9931" size="large" class="mt-4" to="/addrecipe">Add Recipe</v-btn>
+                <v-btn color="#2b9931" size="large" class="mt-4" to="/addrecipe" >Add Recipe</v-btn>
             </v-col>
         </v-row>
     </v-container>
 
     <v-container fluid class="py-16 pa-0">
-        <v-carousel height="700" hide-delimiter-background show-arrows="hover" cycle>
+        <v-carousel height="740" hide-delimiter-background show-arrows="hover" cycle>
             <v-carousel-item v-for="(img, i) in images_car" :key="i">
                 <v-sheet height="100%" class="d-flex align-center justify-center">
                     <v-img :src="img" cover height="100%">
@@ -177,13 +177,13 @@ export default {
 }
 
 .feature-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .banner {
     position: relative;
-    height: 596px;
-    background-image: url(./public/banner.jpg);
+    height: 740px;
+    background-image: url(./banner.jpg);
     background-size: cover;
     background-position: center;
     display: flex;

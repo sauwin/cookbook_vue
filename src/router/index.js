@@ -9,8 +9,8 @@ import NotFoundPage from '@/views/NotFoundPage.vue'
 const routes = [
   { path: '/', name: 'homepage', component: HomePage },
   { path: '/addrecipe', name: 'addpage', component: AddPage },
-  { path: '/recipe/:id', name: 'detailpage', component: DetailPage },
   { path: '/recipes', name: 'recipespage', component: RecipesPage },
+  { path: '/recipe/:slug', name: 'detailpage', component: DetailPage },
   { path: '/favorites', name: 'favoritespage', component: FavoritesPage },
   { path: '/:pathMatch(.*)*', name: 'notfoundpage', component: NotFoundPage }
 ]
