@@ -1,10 +1,13 @@
 <script>
+import data from '../datas/data.json';
+
 export default {
   name: "HomeView",
   data() {
     return {
-      recipesCount: 128,
-      images_car: [
+        recipes: data.recipes,
+        recipesCount: data.recipes.length,
+        images_car: [
         new URL('@/assets/images/carousel/food1.jpg', import.meta.url).href,
         new URL('@/assets/images/carousel/food2.jpg', import.meta.url).href,
         new URL('@/assets/images/carousel/food3.jpg', import.meta.url).href,
