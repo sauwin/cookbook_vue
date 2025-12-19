@@ -36,7 +36,7 @@ export default {
     <v-card-text class="text-body-2">{{ recipe.description }}</v-card-text>
 
     <v-card-actions class="justify-space-between">
-        <v-btn color="green" variant="flat" @click="goToDetail">View recipe</v-btn>
+        <v-btn color="#2b9931" variant="flat" @click="goToDetail">View recipe</v-btn>
 
         <v-btn icon variant="text">
             <v-icon :color="recipe.favorites ? 'red' : 'grey'">mdi-heart</v-icon>
