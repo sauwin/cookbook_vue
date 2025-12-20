@@ -26,6 +26,7 @@ export default {
 </script>
 
 <template>
+<v-container class="pa-0">
 <v-card class="recipe-card" elevation="2">
     <v-img :src="getImage(recipe.image)" height="180" cover />
 
@@ -43,10 +44,16 @@ export default {
         </v-btn>
     </v-card-actions>
 </v-card>
+</v-container>
 </template>
 
 <style>
 .recipe-card {
     border-radius: 16px;
+    transition: transform 0.2s ease;
+}
+
+.recipe-card:hover {
+    transform: scale(1.01);
 }
 </style>

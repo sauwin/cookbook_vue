@@ -1,5 +1,5 @@
 <script>
-import recipesData from '@/datas/data.json'
+import data from '@/datas/data.json'
 
 export default {
     name: 'DetailPage',
@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         loadRecipe(slug) {
-            const found = recipesData.recipes.find(r => r.slug === slug)
+            const found = data.recipes.find(r => r.slug === slug)
             if (found) {
                 this.recipe = found
             } else {
@@ -75,7 +75,10 @@ export default {
 </v-container>
 <v-container align="center" class="mb-10">
     <router-link to="/recipes" class="mt-5">
-        <v-btn color="#2b9931" variant="flat" size="large">Back to recipes</v-btn>
+        <v-btn color="#2b9931" variant="flat" size="large">
+            <v-icon size="30" class="pr-3">mdi-arrow-left</v-icon>
+            Back to recipes
+        </v-btn>
     </router-link>
 </v-container>
 </template>
