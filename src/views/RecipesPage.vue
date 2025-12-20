@@ -1,12 +1,10 @@
 <script>
-import RecipeList from "@/components/Recipelist.vue";
+import RecipeList from "@/components/RecipeList.vue";
 import data from '../datas/data.json';
 
 export default {
     name: "RecipesPage",
-    components: {
-        RecipeList
-    },
+    components: { RecipeList },
     data() {
         return {
             recipes: data.recipes

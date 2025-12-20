@@ -42,7 +42,7 @@
       ],
       "time": 10,
       "image": "scrambled-eggs.jpg",
-      "favorites": false
+      "favorites": true
     },
     {
       "id": 3,
@@ -64,7 +64,7 @@
       ],
       "time": 15,
       "image": "aglio-e-olio.jpg",
-      "favorites": false
+      "favorites": true
     },
     {
       "id": 4,
@@ -87,7 +87,7 @@
       ],
       "time": 25,
       "image": "chicken-salad.jpg",
-      "favorites": false
+      "favorites": true
     },
     {
       "id": 5,
@@ -150,7 +150,30 @@
       ],
       "time": 30,
       "image": "tomato-soup.jpg",
-      "favorites": false
+      "favorites": true
+    },
+    {
+    "id": 8,
+    "title": "Fruit Yogurt Bowl",
+    "slug": "fruit-yogurt-bowl",
+    "description": "Refreshing and healthy yogurt with fresh fruits.",
+    "ingredients": [
+      "Yogurt",
+      "Strawberries",
+      "Blueberries",
+      "Banana",
+      "Honey",
+      "Granola"
+    ],
+    "steps": [
+      "Slice the fruits.",
+      "Put yogurt in a bowl.",
+      "Add fruits on top of yogurt.",
+      "Drizzle with honey and sprinkle granola."
+    ],
+    "time": 5,
+    "image": "fruit-yogurt-bowl.jpg",
+    "favorites": false
     }
   ]
 }
