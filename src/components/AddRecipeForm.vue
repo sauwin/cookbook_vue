@@ -45,9 +45,9 @@ export default {
 <template>
 <v-form @submit.prevent="submitForm">
     <v-text-field v-model="recipe.title" label="Title" required/>
-    <v-text-field v-model="recipe.slug" label="Slug (pasta-carbonara)" required/>
+    <v-text-field v-model="recipe.slug" label="Slug (omelette)" required/>
     <v-text-field v-model="recipe.time" type="number" label="Cooking time (minutes)"/>
-    <v-text-field v-model="recipe.image" label="Image filename (pasta.jpg)"/>
+    <v-text-field v-model="recipe.image" label="Image filename (omelette.jpg)"/>
     <v-textarea v-model="recipe.description" label="Description" rows="3"/>
     <v-textarea v-model="recipe.ingredients" label="Ingredients (one per line)" rows="4"/>
     <v-textarea v-model="recipe.steps" label="Steps (one per line)" rows="4"/>
