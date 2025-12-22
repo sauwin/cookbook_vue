@@ -5,10 +5,7 @@ export default {
     name: 'RecipeList',
     components: { RecipeCard },
     props: {
-        recipes: {
-            type: Array,
-            required: true
-        }
+        recipes: { type: Array }
     }
 }
 </script>
