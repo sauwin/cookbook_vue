@@ -1,13 +1,14 @@
 <script>
 import RecipeList from "@/components/RecipeList.vue";
-import data from '../datas/data.json';
+import { useRecipesStore } from "@/stores/recipes";
 
 export default {
   name: "FavoritesPage",
   components: { RecipeList },
   computed: {
     favoriteRecipes() {
-      return data.recipes.filter(recipe => recipe.favorites);
+      const store = useRecipesStore();
+      return store.recipes.filter(recipe => recipe.favorites);
     }
   }
 };
@@ -22,8 +23,11 @@ export default {
 
 <style>
 .page-title {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 36px;
+  margin-top: 36px;
+  color: black;
+  text-align: center;
 }
 </style>

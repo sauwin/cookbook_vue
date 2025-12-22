@@ -1,14 +1,16 @@
 <script>
-import RecipeList from "@/components/RecipeList.vue";
-import data from '../datas/data.json';
+import RecipeList from "@/components/RecipeList.vue"
+import data from '../datas/data.json'
+import { useRecipesStore } from "@/stores/recipes";
 
 export default {
     name: "RecipesPage",
     components: { RecipeList },
-    data() {
-        return {
-            recipes: data.recipes
-        };
+    computed: {
+        recipes() {
+            const store = useRecipesStore()
+            return store.recipes
+        }
     }
 };
 </script>
@@ -21,11 +23,5 @@ export default {
 </template>
 
 <style>
-.page-title {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: black;
-    text-align: center;
-}
+
 </style>
