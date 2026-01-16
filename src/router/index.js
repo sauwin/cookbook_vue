@@ -18,7 +18,7 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory('/cookbook_vue/'),
   routes,
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior() {
     return { top: 0 }
   }
 })
